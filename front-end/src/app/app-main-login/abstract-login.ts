@@ -1,6 +1,7 @@
-import {OnInit} from '@angular/core';
+import { OnInit, Directive } from '@angular/core';
 
 // TODO: Abstract all common functionality
+@Directive()
 export class AbstractLogin implements OnInit {
     public show: boolean = false;
 
