@@ -55,15 +55,15 @@ jobs:
     # CircleCI will report the results back to your VCS provider.
     steps:
       - checkout
-#      - run:
-#          name: npm install
-#          command: npm install
-#          working_directory: ~/project/front-end/
-
       - run:
-          name: intall eslint eslint-config-google
-          command: npm install eslint  @typescript-eslint/parser
+          name: npm install
+          command: npm install
           working_directory: ~/project/front-end/
+
+#      - run:
+#          name: intall eslint eslint-config-google
+#          command: npm install eslint  @typescript-eslint/parser
+#          working_directory: ~/project/front-end/
 
       - run:
           command: ls ~/project/front-end/node_modules/ || echo not found
