@@ -69,6 +69,9 @@ jobs:
           command: ls ~/project/front-end/node_modules/ || echo not found
 
       - run:
+          command: cat ~/project/front-end/package.json || echo not found
+
+      - run:
           name: run linter version
           command: ./node_modules/.bin/eslint --version
           working_directory: ~/project/front-end/
