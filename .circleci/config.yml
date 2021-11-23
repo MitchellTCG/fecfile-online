@@ -56,8 +56,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: npm install
-          command: npm install
+          name: npm install --force
+          command: npm install --force
           working_directory: ~/project/front-end/
 
 #      - run:
